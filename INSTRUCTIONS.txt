@@ -1,0 +1,39 @@
+1. Create and activate a virtual environment (optional but recommended):
+
+# Create a virtual environment with virtualenv
+virtualenv classification_env
+
+# Activate the virtual environment
+# On Windows
+classification_env\Scripts\activate
+# On macOS and Linux
+source classification_env/bin/activate
+
+----------------------------------------------------
+
+2. Install dependencies:
+Make sure you have Python installed (preferably 3.6+). Then, install the dependencies from the provided requirements.txt file:
+
+pip install -r requirements.txt
+
+----------------------------------------------------
+
+3. Run the application:
+Make sure you are in the directory containing your source code and run the following command:
+
+streamlit run your_file.py
+
+----------------------------------------------------
+
+4. Using the application:
+Upload images:
+
+Select the "Upload files" option to load images from your device or "Use URL" to load images from a URL.
+Choose the desired model to classify the images from the available options.
+Perform classifications:
+
+Click the classification button to process and classify the uploaded images.
+Results will be displayed with the model's prediction and associated probability for each image class.
+Export to CSV:
+
+If predictions have been made, a button will be enabled to export the results to a CSV file named predictions.csv.
